@@ -1,2 +1,14 @@
-<h1>Test#hello</h1>
-<p>Find me in app/views/test/hello.html.erb</p>
+<p>
+  <b>Rails.application.config.assets:</b><br>
+  <%= p Rails.application.config.assets %>
+</p>
+
+<% if Rails.application.config.assets.enabled %>
+  <p>
+    Assets are enabled.
+  </p>
+<% else %>
+  <p>
+    Assets are <i>not</i> enabled.
+  </p>
+<% end %>
